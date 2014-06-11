@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  to ensure that the background image is not scaled -->
+<!--  Reference http://stackoverflow.com/questions/3944080/android-avoid-scaling-of-background  -->
+<!--  The below code causes a crash. So not used. -->
+<bitmap xmlns:android="schemas.android.com/apk/res/android"
+    android:gravity="top"
+    android:src="@drawable/bg"/>
+  

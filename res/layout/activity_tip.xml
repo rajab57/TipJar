@@ -1,0 +1,288 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+ 
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg" />
+ 
+    <LinearLayout
+        android:id="@+id/llbill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" >
+
+        <EditText
+            android:id="@+id/billAmountLabel"
+            style="@style/text_label"
+            android:inputType="none"
+            android:text="Bill Amount" />
+
+        <EditText
+            android:id="@+id/billAmount"
+            style="@style/background2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif-light"
+            android:hint="             $$$"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/secondColor" >
+        </EditText>
+    </LinearLayout>
+
+    <!-- background android:background="#00000000" to remove the line at the bottom of EditText -->
+
+    <EditText
+        android:id="@+id/tipPercentageLabel"
+        style="@style/text_label"
+        android:inputType="none"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/radioGroup"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:text="Tip %" />
+
+    <EditText
+        android:id="@+id/tipPercent"
+        style="@style/background2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tipPercentageLabel"
+        android:layout_alignBottom="@+id/tipPercentageLabel"
+        android:layout_alignLeft="@+id/splitBy"
+        android:layout_toRightOf="@+id/tipPercentageLabel"
+        android:background="#00000000"
+        android:fontFamily="sans-serif-light"
+        android:inputType="none"
+        android:focusable="false"
+        android:padding="2dp"
+        android:text="20"
+        android:textColor="@color/textColor" />
+
+    <SeekBar
+        android:id="@+id/tipPercentageSlider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tipPercentageLabel"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@+id/tipPercent"
+        android:max="100"
+        android:maxHeight="3dp"
+        android:minHeight="3dp"
+        android:progress="0"
+        android:progressDrawable="@drawable/seekbar_progress"
+        android:thumb="@drawable/seekbar"
+        android:thumbOffset="5dp" />
+
+    <EditText
+        android:id="@+id/splitBy"
+        style="@style/background2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="none"
+        android:focusable="false"
+        android:layout_alignBaseline="@+id/splitbyLabel"
+        android:layout_alignBottom="@+id/splitbyLabel"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/splitbyLabel"
+        android:background="#00000000"
+        android:fontFamily="sans-serif-light"
+        android:padding="2dp"
+        android:text="1"
+        android:textColor="@color/textColor" />
+
+    <EditText
+        android:id="@+id/splitbyLabel"
+        style="@style/text_label"
+        android:inputType="none"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tipPercentageLabel"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Split By" />
+
+    <SeekBar
+        android:id="@+id/splitbySlider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tipPercentageSlider"
+        android:layout_alignTop="@+id/splitbyLabel"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@+id/splitBy"
+        android:max="10"
+        android:maxHeight="3dp"
+        android:minHeight="3dp"
+        android:progress="0"
+        android:progressDrawable="@drawable/seekbar_progress"
+        android:thumb="@drawable/seekbar"
+        android:thumbOffset="5dp" />
+
+    <LinearLayout
+        android:id="@+id/lltop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="40dp"
+        android:baselineAligned="false"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/secondColor" />
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#29000000"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/tipAmountLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:inputType="none"
+                    android:layout_marginTop="10dp"
+                    android:background="#00000000"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Tip Amount"
+                    android:textColor="@color/white"
+                    tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/tipAmount"
+                    style="@style/output_text"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#00000000"
+                    android:hint="$0.00"
+                    android:inputType="numberDecimal" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/secondColor"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#29000000"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/finalAmountLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:alpha="1"
+                    android:background="#00000000"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Final Amount"
+                    android:inputType="none"
+                    android:textColor="@color/textColor"
+                    tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/finalAmount"
+                    style="@style/output_text"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:alpha="1"
+                    android:background="#00000000"
+                    android:hint="$0.00"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/secondColor" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llbill"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/aha"
+            style="@style/radio_normal"
+            android:checked="true"
+            android:text="20%" />
+
+        <RadioButton
+            android:id="@+id/yeah"
+            style="@style/radio_normal"
+            android:layout_marginLeft="10dp"
+          
+            android:text="15%" />
+
+        <RadioButton
+            android:id="@+id/nah"
+            style="@style/radio_normal"
+            android:layout_marginLeft="10dp"
+            android:text="10%" />
+    </RadioGroup>
+
+    <LinearLayout 
+        android:id="@+id/bottomll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentRight="true">
+        
+    <CheckBox 
+        android:id="@+id/excludeTax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/custom_checkbox"
+        android:onClick="excludeServiceTaxFromBillAmount"
+        android:visibility="gone"
+        />
+    <EditText
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:textSize="20sp"
+        android:focusable="false"
+        android:background="#00000000"
+        android:textColor="@color/textColor"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" >
+	 </EditText>
+	 </LinearLayout>
+
+</RelativeLayout>

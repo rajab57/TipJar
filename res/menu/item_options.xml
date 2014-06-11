@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_editTip"
+        android:icon="@drawable/edit2"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="Edit"/>
+</menu>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/semitransparentHighlight" >
+    
+    <EditText
+        android:id="@+id/tip1"
+        style="@style/background2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:background="#00000000"
+        android:fontFamily="sans-serif-light"
+        android:inputType="none"
+        android:focusable="false"
+        android:padding="2dp"
+        android:text="20"
+        android:textColor="@color/textColor" />
+
+    <SeekBar
+        android:id="@+id/tipslider1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tip1"
+        android:layout_toRightOf="@+id/tip1"
+        android:layout_marginLeft="10dp"
+        android:max="100"
+        android:maxHeight="3dp"
+        android:minHeight="3dp"
+        android:progress="20"
+        android:progressDrawable="@drawable/seekbar_progress"
+        android:thumb="@drawable/seekbar"
+        android:thumbOffset="5dp" />
+
+        
+    <EditText
+        android:id="@+id/tip2"
+        style="@style/background2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+ 		android:layout_below="@+id/tip1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:background="#00000000"
+        android:fontFamily="sans-serif-light"
+        android:inputType="none"
+        android:focusable="false"
+        android:padding="2dp"
+        android:text="15"
+        android:textColor="@color/textColor" />
+
+    <SeekBar
+        android:id="@+id/tipslider2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tip2"
+        android:layout_toRightOf="@+id/tip2"
+        android:layout_marginLeft="10dp"
+        android:max="100"
+        android:maxHeight="3dp"
+        android:minHeight="3dp"
+        android:progress="15"
+        android:progressDrawable="@drawable/seekbar_progress"
+        android:thumb="@drawable/seekbar"
+        android:thumbOffset="5dp" />
+    
+    <EditText
+        android:id="@+id/tip3"
+        style="@style/background2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+ 		android:layout_below="@+id/tip2"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:background="#00000000"
+        android:fontFamily="sans-serif-light"
+        android:inputType="none"
+        android:focusable="false"
+        android:padding="2dp"
+        android:text="10"
+        android:textColor="@color/textColor" />
+
+    <SeekBar
+        android:id="@+id/tipslider3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tip3"
+        android:layout_toRightOf="@+id/tip3"
+        android:layout_marginLeft="10dp"
+        android:max="100"
+        android:maxHeight="3dp"
+        android:minHeight="3dp"
+        android:progress="10"
+        android:progressDrawable="@drawable/seekbar_progress"
+        android:thumb="@drawable/seekbar"
+        android:thumbOffset="5dp" />
+
+    <LinearLayout
+        android:id="@+id/actionll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tip3"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:textColor="@color/textColor"
+            android:background="@drawable/custom_button"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="SAVE" />
+
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:background="@drawable/custom_button"
+            android:textColor="@color/textColor"
+            android:text="CANCEL" />
+    </LinearLayout>
+ 
+</RelativeLayout>

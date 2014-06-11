@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="HardcodedText">
+        <ignore path="res/layout/activity_tip.xml" />
+        <ignore path="res/layout/edit_tax_percent.xml" />
+    </issue>
+</lint>

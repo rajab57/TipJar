@@ -1,0 +1,64 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+            android:fontFamily requires min API 16
+        -->
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="radio_normal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/radio</item>
+        <item name="android:textColor">@drawable/radio_text</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    
+
+	<style name="text_label">
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:inputType">text</item>
+
+	</style>
+
+    <style name="output_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:alpha">1</item>
+        <item name="android:textColorHint">@color/textColor</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+    
+    <style name="background2">
+        android:background="@android:color/transparent"
+        android:textColor="@color/textColor"
+        android:background="#29000000"
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:textColorPrimary">@color/textColor</item>
+       <!--  <item name="android:windowBackground">@drawable/bg</item> --> 
+        <item name="android:editTextBackground">@drawable/edit_text_state</item>
+       
+    </style>
+
+</resources>

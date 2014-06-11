@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TipJar</string>
+    <color name="primaryColor">#dd514c</color>
+    <color name="secondaryColor">#ff7458</color>
+    <color name="complimentaryColor">#34b2a8</color>
+    <color name="grey">#888888</color>
+    <color name="white">#FFFFFF</color>
+    <color name="p2">#B25800</color>
+    <color name="c2">#FF7E00</color>
+    <color name="lightGrey">#BEBEBE</color>
+    <color name="primaryColor2">#fd3745</color>
+    <color name="complimentaryColor2">#bb2932</color>
+    <color name="background">#3b3b3b</color>
+    <color name="highlight">#cb6041</color>
+    <color name="textColor">#FFFFFF</color>
+    <color name="whiteSmoke">#F5F5F5</color>
+    <color name="secondColor">#9E9E9E</color>
+    <color name="semitransparentHighlight">#AAcb6041</color>
+    
+
+</resources>
