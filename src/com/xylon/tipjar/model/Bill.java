@@ -64,7 +64,7 @@ public class Bill {
 			billAmt = roundOff(Double.parseDouble(billAmtStr));
 			if (billAmt > 0) {
 				tipAmt = roundOff(((billAmt * tipPercent) / 100.0) / splitBy);
-				totalAmt = (billAmt / splitBy) + tipAmt;
+				totalAmt = (billAmt / splitBy) + tipAmt + taxAmount;
 			}
 		}
 	}
