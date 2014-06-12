@@ -45,6 +45,11 @@ Total Hours = 20+ hours spent in total
 10. Async Task
 
 ### Walk through of all user stories:
+
+The background image is from Ghirardelli Square ,chocolate making process during one of my trips. The place was
+granted the National Historic Register Status in 1982.
+The image does not show well on Licecap.
+
 ![Video Walkthrough](assets/TipJar.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
