@@ -24,8 +24,8 @@ Total Hours = 20+ hours spent in total
 11. [x] *Additional:* Location the city of the current restaurant and find the sales tax of the city. 
  * Tax tables for various cities is stored in res/xml directory in Xmlformat.
  * Persist the preset tip amounts across launches using SharedPrefernces
- * *Use GPS* and Geocoder to determine the name of the city
- * :exclamation: *Please see attached *images* for screenshot* since geocoder requires a backend service that is not present on the emulator. Didnt find a check mark image and used fill color as an experiment
+ * **Use GPS** and Geocoder to determine the name of the city
+ * :exclamation: **Please see attached *images** for screenshot* since geocoder requires a backend service that is not present on the emulator. Didnt find a check mark image and used fill color as an experiment
 12. [x] *Additional:* Compute PreTax Amount and Tip on that based on the city
 13. [ ] *Additional:* Change shape of circles into polygons( explore canvas )
 14. [ ] *Additional:* Get the name of the restaurant and persist tips/amount and obtain a history for a restaurant
