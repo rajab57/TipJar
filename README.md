@@ -53,15 +53,10 @@ The image does not show well on Licecap.
 ![Video Walkthrough](assets/TipJar.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
-<figure>
+
 <img hspace="10" src="https://github.com/rajab57/TipJar/raw/master/assets/FullBillAmount.png?raw=true" width="300"/>
-<figcaption> Full Amount, service Tax included
-</figure>
 <span> </span>
-<figure>
 <img hspace="10" src="https://github.com/rajab57/TipJar/raw/master/assets/PreTaxAmtWithGPS.png?raw=true" width="300"/>
-<figcaption>Pre Tax amount, Tax determine from location
-</figure>
 <span> </span>
 
 
